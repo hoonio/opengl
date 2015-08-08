@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta name="generator" content="Adobe GoLive">
+<title>Computer Graphics: Particle Systems - opengl.HOONIO.com</title>
+<link href="css/screen.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+<div id="container"> <!-- TemplateBeginEditable name="bannerImage_and_shadow" --> <a href="index.html">
+<img width="740" height="85" border="0" class="blockimg" src="images/header.jpg" alt="Computer Graphics"></a>
+<img width="740" height="15" border="0" src="images/topshadow.gif" alt=""> <!-- TemplateEndEditable -->
+<div id="content">
+<div id="leftCol">
+<h3><!-- TemplateBeginEditable name="leftColHeader" -->Projects List<!-- TemplateEndEditable --></h3>
+<div class="scrollBox"> <!-- TemplateBeginEditable name="leftcol_images" --> <a href="proj2.html">
+<img width="235" height="70" src="images/menu2.jpg" alt="Project 2"></a> <a href="proj1.html">
+<img width="235" height="70" src="images/menu1.jpg" alt="Project 1"></a> <a href="projD.html">
+<img width="235" height="70" src="images/menuD.jpg" alt="Project D"></a> <a href="projC.html">
+<img width="235" height="70" src="images/menuC.jpg" alt="Project C"></a> <a href="projB.html">
+<img width="235" height="70" src="images/menuB.jpg" alt="Project B"></a> <a href="projA.html">
+<img width="235" height="70" src="images/menuA.jpg" alt="Project A"></a> <!-- TemplateEndEditable --></div>
+<div class="listbox"> <!-- TemplateBeginEditable name="listBoxHeader" -->
+<img width="255" height="33" class="blockimg" src="images/listboxTop.gif" alt="Links" livesrc="smartobj/listbox_header.psd"> <!-- TemplateEndEditable --><!-- TemplateBeginEditable name="listBoxLinks" -->
+<ul>
+<li><a href="https://courses.northwestern.edu/webapps/login"><strong>NU BlackBoard</strong></a></li>
+<li><a href="http://www.opengl.org/documentation/red_book_1.0/"><strong>OpenGL RedBook</strong></a></li>
+<li><a href="http://www.opengl.org/documentation/blue_book_1.0/"><strong>OpenGL BlueBook</strong></a></li>
+<li><a href="http://www.xmission.com/%7Enate/tutors.html"><strong>Nate Robins Tutors</strong></a></li>
+<li><a href="http://nehe.gamedev.net/"><strong>NeHe Productions</strong></a></li> </ul> <!-- TemplateEndEditable --><!-- TemplateBeginEditable name="listBoxBottomImage" -->
+<img width="255" src="images/listboxBottom.gif" alt="listbox bottom"> <!-- TemplateEndEditable --></div> </div>
+<div id="rightCol"> <!-- TemplateBeginEditable name="RightContent" -->
+<div class="article">
+<center>
+<img width="400" height="225" border="0" class="blockimg" src="images/proj1.jpg" alt="Project 1">
+<br> </center> </div>
+<div class="article">
+<img width="455" height="40" border="0" class="blockimg" src="images/articleHeaderOne.gif" alt="Project Goals">
+<p>Requirements for this project were to create an interactive particle system program that consists of systems in which particles move independently, move under influence of a vector field, and that are linked together. The initial plan was to create a natural scene that presents trees and leaves falling off by wind effect, and a flock of birds flying around, where the leaves coming off the tree would the system mocing under influence of a 3D vector field with an aging process.<br>
+<br> </p> </div>
+<div class="article">
+<img width="455" height="40" border="0" class="blockimg" src="images/articleHeaderTwo.gif" alt="Progress">
+<p>Given the starter code for the particle system, the first step taken was to create a third object for the bouncing sphere system, which then extended to 10-particle system. The complete system with 10 particles were replicated in order to provide a base setup for 3 different particle systems. While being part of one global object, swarm, each system differs in that it uses different update function calls, which are variations of getNetForceOn.</p>
+<br> </div>
+<div class="article">
+<img width="455" height="40" border="0" class="blockimg" src="images/articleHeaderThree.gif" alt="Method">
+<p>With difficulties of drawing birds or real-life looking objects, flock system and falling leaves have been replaced with system of flying teapots and snowing effect, respectably. Flying teapots move independently, and they are simulated by modifying the original particle system with higher charge and more flexible strings which are now invisible. Tree system is made with green spheres which dissemble chunks of leaves that make part of a tree, and connecting strings that become the stems. This is the system that holds particles more firmly even in explicit mode, and avoids parts of tree falling down to the ground by minimizing gravity effect. The last is snowing effect with influence of a vector field, which is gravity, and each particles are dynamically created and destroyed. They are simulated in a way that everytime a particle hits the ground, the program deletes that particle and creates another at new location. </p>
+<br> </div>
+<div class="article">
+<img width="455" height="40" border="0" class="blockimg" src="images/articleHeaderFour.gif" alt="Results">
+<p>All of the functionalities discussed above have been found to work. The  only confilict that is noticeable is that between particles of different system have collision avoidance issue. In order to solve this, for each particle, next movement should be computed with the rest of the world, and that brings the application to another level of complexity. Other possible future works would definitely include higher quality objects as well as more interactive viewing positions such as camera following a flying object.</p>
+<p>Here are the screenshots taken at various timestamps.</p>
+<p>
+<br></p>
+<center>
+<img width="400" height="225" border="0" class="blockimg" src="images/screenshot11.jpg" alt="Screenshot">
+<br></center>
+<center>
+<img width="400" height="225" border="0" class="blockimg" src="images/screenshot12.jpg" alt="Screenshot">
+<br></center>
+<center>
+<object width="400" height="225" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0">
+<param name="movie" value="images/capture.swf">
+<param name="quality" value="best">
+<param name="play" value="true">
+<embed width="400" height="225" pluginspage="http://www.macromedia.com/go/getflashplayer" src="images/capture.swf" type="application/x-shockwave-flash" quality="best" play="true"></embed> </object></center>
+<p>
+<br></p>
+<p>Source Code: <a href="code/project1.zip">Download</a> (Zip/554KB) </p>
+<br> </div> <!-- TemplateEndEditable --></div> </div>
+<div id="footer"> <!-- TemplateBeginEditable name="footerContent" -->©2005 Hooonio.com Seunghoon Kim All Rights Reserved.<!-- TemplateEndEditable --></div> </div>
+</body>
+</html>
